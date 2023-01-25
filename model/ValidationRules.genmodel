@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Tst/src" modelPluginID="Tst" modelName="ValidationRules"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>file:/C:/Users/teseghiri/Documents/Compo%20perso%20Arduino/ValidationRules.xsd</foreignModel>
+  <genPackages prefix="Schema" basePackage="netlist" resource="XML" disposableProviderFactory="true"
+      ecorePackage="schema.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="schema.ecore#//HiddenType">
+      <genEnumLiterals ecoreEnumLiteral="schema.ecore#//HiddenType/true"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="schema.ecore#//HiddenTypeObject"/>
+    <genDataTypes ecoreDataType="schema.ecore#//NameType"/>
+    <genDataTypes ecoreDataType="schema.ecore#//VersionType"/>
+    <genDataTypes ecoreDataType="schema.ecore#//VersionType1"/>
+    <genClasses ecoreClass="schema.ecore#//AutomationStudioType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//AutomationStudioType/version"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//CompoType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//CompoType/variableType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//CompoType/subComponents"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//CompoType/componentID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//CompoType/hidden"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//CompoType/iDA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//CompoType/iDF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//CompoType/iDT"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//DocsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//DocsType/document"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//DocType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//DocType/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//DocType/layer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//DocType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference schema.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference schema.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//DocumentRoot/netlist"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//ExportType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//ExportType/version"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//LayerType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//LayerType/component"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//LayerType/locked"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//LayerType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//LayerType/simulated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//LayerType/visible"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//LinkType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//LinkType/compID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//LinkType/portID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//LinkType/portName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//LinkType/refID"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//NetlistType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//NetlistType/automationStudio"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//NetlistType/export"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//NetlistType/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//NetlistType/documents"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//NetlistType/nodes"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//NodesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//NodesType/node"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//NodeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//NodeType/link"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//NodeType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//NodeType/technology"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//PropertiesType"/>
+    <genClasses ecoreClass="schema.ecore#//SubComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//SubComponent/refID"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//SubComponents">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//SubComponents/component"/>
+    </genClasses>
+    <genClasses ecoreClass="schema.ecore#//VariableType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//VariableType/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
